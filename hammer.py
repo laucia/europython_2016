@@ -71,7 +71,7 @@ if __name__ == "__main__":
     start_time = time.time()
     loop.run_until_complete(future)
     end_time = time.time()
-    print("We did {} requests in {}".format(
+    print("We did {} requests in {:.3f}".format(
         args.nb_requests,
         end_time-start_time,
     ))
